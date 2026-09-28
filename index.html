@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinatii</a>
+            <a href="#planifica">Planifica</a>
+            <a href="#recomandari">Recomandari</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinatii">
+            <h2>Destinatii</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Frankfurt</h3>
+                    <p><strong>Germania</strong></p>
+                    <p>Orasul in care se gaseste Bursa din Frankfurt</p>
+                    <p>Durata: 4 zile</p>
+                </article>
+                <article class="card featured">
+                    <h3>Roma</h3>
+                    <p><strong>Italia</strong></p>
+                    <p>O incursiune in istoria antica a Europei.</p>
+                    <p>Durata: 5 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Madrid</h3>
+                    <p><strong>Spania</strong></p>
+                    <p>Capitala Spaniei.Hala Madrid</p>
+                    <p>Durata: 4 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Viena</h3>
+                    <p><strong>Austria</strong></p>
+                    <p>Capitala muzicii clasice si a palatelor imperiale.</p>
+                    <p>Durata: 3 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Berlin</h3>
+                    <p><strong>Germania</strong></p>
+                    <p>O capitala cu o istorie controversata</p>
+                    <p>Durata: 6 zile</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="planifica">
+            <h2>Planifica excursia</h2>
+            <form>
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text">
+
+                <label for="destination">Destinatie</label>
+                <select id="destination" name="destination">
+                    <option value="">Alege...</option>
+                    <option value="Frankfurt">Frankurt</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Madrid">Madird</option>
+                    <option value="Viena">Viena</option>
+                    <option value="Berlin">Berlin</option>
+                </select>
+
+                <label for="days">Numar de zile</label>
+                <input id="days" name="days" type="number">
+
+                <button type="submit">Planifica excursia</button>
+            </form>
+        </section>
+
+        <section id="recomandari">
+            <h2>Recomandari</h2>
+            <ul>
+                <li>Cumpara biletele in avans pentru atractiile turistice populare.</li>
+                <li>Foloseste transportul public pentru a economisi bani si timp.</li>
+                <li>Incearca preparatele locale la restaurantele mici, de cartier.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>Radu-Ioan Zaharie, 2026</footer>
+</body>
+</html>
