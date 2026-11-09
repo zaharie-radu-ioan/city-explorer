@@ -1,8 +1,7 @@
-export const destinatii = [
-  { id: '1', oras: 'Lisabona', tara: 'Portugalia', zile: 4, vizitat: false },
-  { id: '2', oras: 'Cluj-Napoca', tara: 'România', zile: 2, vizitat: true },
-  { id: '3', oras: 'Porto', tara: 'Portugalia', zile: 3, vizitat: false },
-  { id: '4', oras: 'Brașov', tara: 'România', zile: 2, vizitat: true },
-  { id: '5', oras: 'Kyoto', tara: 'Japonia', zile: 6, vizitat: false },
-  { id: '6', oras: 'Tokyo', tara: 'Japonia', zile: 5, vizitat: false },
-]
+   export const getNevizitate = (list) => list.filter((d) => !d.vizitat)
+   export const totalZile = (list) => list.reduce((total, d) => total + d.zile, 0)
+   export const marcheazaVizitat = (list, id) =>
+     list.map((d) => (d.id === id ? { ...d, vizitat: !d.vizitat } : d))
+   export const adaugaDestinatie = (list, destinatie) => [...list, destinatie]
+   export const nr = (n, cuvant) =>
+     (n % 100 >= 20 ? `${n} de ${cuvant}` : `${n} ${cuvant}`)
